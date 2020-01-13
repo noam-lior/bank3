@@ -22,9 +22,9 @@ class App extends Component {
             <Transactions />}>
           </Route>
 
-          {/* <Route path='/' exact render={() =>
+          <Route path='/' exact render={() =>
             <Operations />}>
-          </Route> */}
+          </Route>
 
         </Router>
 

@@ -4,12 +4,14 @@ import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
 import {TransactionsStore as transactionsStore} from './stores/TransactionsStore'
+import {OperationsStore as operationsStore} from './stores/OperationsStore'
 import {Provider} from 'mobx-react'
 
 
 const TransactionsStore=new transactionsStore()
+const OperationsStore=new operationsStore()
 
-const store={TransactionsStore}
+const store={TransactionsStore,OperationsStore}
 ReactDOM.render(<Provider {...store}><App /></Provider>, document.getElementById('root'));
 
 // If you want your app to work offline and load faster, you can change
